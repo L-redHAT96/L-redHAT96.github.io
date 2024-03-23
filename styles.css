@@ -1,0 +1,120 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    }
+header {
+        background-color: #343a40;
+        color: #fff;
+        padding: 0px;
+        text-align: center;
+}
+header h1{
+    font-size: 50px;
+    color: red;
+    margin-bottom: 0px;
+}
+header h2{
+    font-size: large;
+    margin-top: 0px;
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size:larger ;
+    color: #343a40;
+}
+.section {
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+.section-header {
+    text-align: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.intro {
+    display: flex;
+    align-items: center;
+}
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.intro-text{
+    text-align: justify;
+    margin-top: 0;
+}
+.intro-text h2{
+    color: red;
+}
+.Projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.Project {
+    flex-basis: calc(25% - 10px); /* Set flex-basis to accommodate four projects */
+    margin-bottom: 20px;
+}
+
+.Project img {
+    width: 100%;
+    height: auto;
+}
+
+.Project p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+hr {
+    border: none; /* Remove default border */
+    height: 5px; /* Set height */
+    border-color: black;
+    background-color:black; /* Set background color */
+    margin: 10px 0; /* Set margin for spacing */
+}
+.ContactLink {
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between projects */
+}
+
+.ContactLinkGroup {
+    flex: 1; /* Allow projects to grow to fill available space */
+    max-width: calc(25% - 10px); /* Set maximum width for each project */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Stack the image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+.ContactLinkGroup img {
+    width: 50px;
+    height: 50px; /* Set a fixed height for the images */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
+
+.ContactLinkGroup p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
