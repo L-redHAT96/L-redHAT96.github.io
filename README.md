@@ -1,1 +1,1 @@
-This is my Portfolio as my venture on a challege to upskill myself
+This is my Portfolio i my venture on a challege to upskill myself
