@@ -61,28 +61,35 @@ footer {
     color: red;
 }
 .Projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .Project {
-    flex-basis: calc(25% - 10px); /* Set flex-basis to accommodate four projects */
-    margin-bottom: 20px;
+    display: inline-block; /* Display tribute as an inline-block element */
+    width: calc(50% - 20px); /* Set width to accommodate one tribute and account for margin */
+    margin-right: 20px; /* Add margin for spacing between tributes */
+    vertical-align: top; /* Align tributes to the top */
+}
+
+.Project:last-child {
+    margin-right: 0; /* Remove margin from the last tribute */
 }
 
 .Project img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure images are responsive */
+    width:75vw;
+    height: 20vw;
 }
+.Project:hover {
+    color: #ffc107;
+  }
 
 .Project p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
+    white-space: normal; /* Allow wrapping within p tags */
 }
+
 hr {
     border: none; /* Remove default border */
     height: 5px; /* Set height */
